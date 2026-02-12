@@ -37,13 +37,14 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
-
+    transition: width .8s, height .8s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     background: #5f2c82 url(../Login/imagens/pexels-cx-lee-2159373144-36090163.jpg);
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: center;
     height: 200px;
     background-size: cover;
 }
@@ -51,4 +52,13 @@ section#login > div#imagem {
 section#login > div#formulario {
    padding: 10px;
     display: block;
+}
+
+div#formulario > form {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p { 
+    font-size: 0.8em;
 }
